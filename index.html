@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Sagar Mazi | Portfolio |</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+             
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>
+                    Hi, I'm <span>Sagar Mazi</span> <br />
+                     From Nagpur, Maharashtra.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/second.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Java Developer with a strong foundation in object-oriented programming and experience in developing
+                      automated systems. Seeking to contribute technical and problem-solving skills to innovative projects in the software
+                      development field.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Skills</span><br>Java , Object-Oriented Programming</li>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JSP, Servlet</li>
+                            <li><span>Database Management </span><br>MySQL , PostgreSQL</li>
+                             <li><span>Servers and Deployment </span><br>Apache Tomcat</li>
+                              <li><span>Development Tools </span><br>Visual Studio Code , IntelliJ IDEA , Eclipse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Java Developer Intern at Primine Software Pvt. Ltd.</li>
+                            <li><span>2024 - 2025</span><br>Training at VibrantMinds Technologies Pvt. Ltd.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 (BTech)</span><br>Dr. Babasaheb Ambedkar Technological 
+University</li>
+                            <li><span>2020 (HSC)</span><br>State Board Of Higher Secondary Education</li>
+                          
+                            <li><span>2016 (SSC)</span><br>State Board Of Secondary Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Java Web Development</h2>
+                    <p>I specialize in building robust and scalable web applications using Java, JSP/Servlets, JDBC, and frameworks like Spring. I ensure clean backend architecture with secure, maintainable code.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Design & Integration</h2>
+                    <p>I design and manage efficient MySQL and PostgreSQL databases, integrating them seamlessly with Java applications to ensure data integrity, optimized queries, and smooth performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Java Desktop & Android Apps</h2>
+                    <p>I develop desktop and Android applications using Java and XML, offering intuitive user interfaces and functional design tailored to business and user needs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="img/project1.jpg" alt="work-1">
+                    <div class="layer">
+                        <h3>Hospital management system</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto repellendus ipsam excepturi aliquid!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/project2.jpg" alt="work-2">
+                    <div class="layer">
+                        <h3>Hotel management system</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto repellendus ipsam excepturi aliquid!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/project3.jpg" alt="work-3">
+                    <div class="layer">
+                        <h3>library management system</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto repellendus ipsam excepturi aliquid!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Sagarmazi786@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91 8459673121</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/01Sagar_Mazi_.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2025 Sagar Mazi. All Rights Reserved. </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
